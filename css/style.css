@@ -1,0 +1,419 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body{
+	font-family: 'Roboto', sans-serif;font-size: 16px;color: white;margin: 0; line-height: 1.2;
+}
+header{
+	width: 100%;height: 60px;background-color: rgba(0,0,0,0.80);box-shadow: 5px 5px 5px lightgray;z-index:100;position: fixed;left: 0;top: 0;
+}
+.nen-den{
+	background-color:black;width: 100%;min-height: 1000px;padding-top: 100px;
+	
+	 
+}
+.logo{padding-top: 11px}
+.menu{padding-top: 20px}
+.menu ul{
+	padding: 0;margin: 0;list-style: none;display: flex
+}
+.menu ul li a{
+	padding: 8px 25px;border-radius: 20px;font-size: 17px
+}
+.menu ul li a:hover{
+	background-color: rgba(248,165,166,1.00);color: white
+}
+.menu ul li .menu-item.active{
+    background-color:white;color:gray;
+    
+}
+
+#home{
+	width: 100%;min-height: 1000px;padding-top: 100px;background:url("../img/goctren.jpg"),url("../img/profile.png");background-repeat: no-repeat;background-position: top left , bottom right;
+}
+
+	
+	
+
+.col-6 .btn-box{
+	width:345px; height:50px;
+	display: flex;
+	justify-content: space-between;
+	
+}
+.btn-box a{
+	position:relative;
+	display: inline-flex;
+	justify-content:center;
+	align-items:center;
+	width:150px;
+	height:100%;
+	background: white;
+	border: 2px solid white;
+	font-size:19px;
+	color: gray;
+	text-decoration:none;
+	font-weight: 600px;
+	letter-spacing: 1px;
+	border-radius: 10px;
+	z-index:1;
+	overflow: hidden;
+	transition: 0.5s;
+}
+.btn-box a:hover{
+	color:white;
+	
+}
+.btn-box a:nth-child(2) {
+	background: transparent;
+	color: white;
+}
+.btn-box a:nth-child(2):hover{
+	color: black;
+} 
+.btn-box a:nth-child(2)::before {
+	background:white;
+	
+}
+
+.btn-box a::before{
+	content: '';
+	position: absolute;
+	top:0;left:0;
+	width:0;
+	height:100%;
+	background: black;
+	z-index:-1;
+	transition: 0.5s;
+}
+.btn-box a:hover::before{
+	width:100%;
+	
+}
+#about{
+	width: 100%;min-height: 1000px;padding-top: 100px;background-color:black;
+    
+}
+.so{
+    font-size: 120px;color:white;font-weight:bold;
+    
+}
+.year{
+    font-size:20px;color:white;letter-spacing: 20px;
+    
+    
+}
+#skill{
+	width: 100%;min-height: 1000px;padding-top: 100px;background-color:black;
+    
+}
+
+.text-trang{
+	color:white;font-weight:600;
+}
+.progress{
+    width:100%; height: 18px;background-color:#BBBBBB; border-radius:20px; margin-bottom: 10px;overflow: hidden;
+    
+}
+.progress2{
+    width:100%; height: 8px;background-color:#BBBBBB; border-radius:10px; margin-bottom: 15px;overflow: hidden;
+    
+}
+.bar{
+ height:18px;background-color:#BBBBBB; border-radius:20px;color:white;text-align:center;  
+}
+.bar2{
+ height:8px;background-color:#BBBBBB; border-radius:10px;color:white;text-align:center;  
+}
+#services{
+	width: 100%;min-height:1000px;padding-top: 100px;background-color:black;
+}
+.service{
+    
+    width:100%;
+    height:150px;
+    display: flex;
+}
+
+.service-icon{
+    width: 180px;height:150px;border: 1px solid white;display:flex;justify-content:center;align-items: center;
+}
+.service-icon i{
+    font-size:40px;color:red;transition: all 0.5s;
+}
+.service-text{
+ width:100%;height:150px;padding:15px; transition: all 0.5s      
+}
+.service:hover .service-icon i{
+    font-size:60px;
+}
+.service:hover .service-text{
+    background-color:white;color:black; 
+}
+#projects{
+	width: 100%;min-height: 1000px;padding-top: 100px;background-color:black;
+}
+/* Style the tab */
+#projects .tab {
+	border: none;
+	background: none;
+}
+
+/* Style the buttons inside the tab */
+#projects .tab button {
+border-bottom: 2px solid white;
+background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 3px 0;margin-left: 25px;
+  transition: 0.3s;
+  font-size: 20px;
+}
+
+/* Change background color of buttons on hover */
+#projects .tab button:hover {
+ color: lightpink;border-bottom: 2px solid #D51971;
+}
+
+/* Create an active/current tablink class */
+#projects .tab button.active {
+  color: deeppink;border-bottom: 2px #DB8A8B;
+	border-bottom: 2px solid #D51971;
+}
+
+/* Style the tab content */
+#projects .tabcontent2 {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
+.box{
+	
+	display: flex;
+	justify-content:space-between;
+	align-items: center;
+	
+}
+#projects .owl-nav { position:absolute; left:0px; top:30%; width:100%; }
+
+#projects .owl-nav [class*='owl-'] {
+
+	font-size:79px;  color: white ;width: 40px;
+
+}
+
+
+
+#projects .owl-nav .owl-next{ position:absolute; right:-4%;}
+
+#projects .owl-nav .owl-prev{ position:absolute; left:-4%;}
+
+#projects .owl-nav [class*='owl-']:hover {
+
+      background:none;
+
+      color:deeppink;
+
+      text-decoration: none; }
+
+
+
+
+#testimonial{
+	width: 100%;min-height: 1000px;padding-top: 100px;background-color:black;
+}
+#testimonial .client{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	text-align:center;
+	align-items:center;
+	
+}
+#testimonial .client img{
+	
+	width:100px;
+	height:100px;
+	border-radius: 50%;	
+}
+#testimonial .vien{
+	
+	width:100px;
+	height:100px;
+	border-radius: 50%;
+	border: 2px solid  #FFD1D2;padding:7px;
+	
+}
+
+#testimonial .owl-nav { position:absolute; left:0px; top:40%; width:100%; }
+
+#testimonial .owl-nav [class*='owl-'] {
+
+	font-size:79px; /*background:rgba(255,255,255,.5);border:1px solid #fff; */ color: #fff
+
+}
+
+
+
+#testimonial .owl-nav .owl-next{ position:absolute; right:5%;}
+
+#testimonial .owl-nav .owl-prev{ position:absolute; left:5%;}
+
+#testimonial .owl-nav [class*='owl-']:hover {
+
+      background:none;border: none;
+
+      color:deeppink;
+
+      text-decoration: none; }
+#contact{
+	width: 100%;min-height: 1000px;padding-top: 100px;background-color:black;
+}
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+}
+#contact .vien-chan {
+  padding-bottom: 15px;
+  font-size: 25px;
+  color: black;
+  border-bottom: 2px solid orange
+}
+#contact .fab:hover {
+  transition: 0.3s all
+}
+.tieu-de{
+    color:white;font-size:40px;
+    
+}
+.text-vang{
+    
+    color:deeppink;
+}
+.text-den{ color:black;}
+.bo-goc{
+    border-radius:50px;
+}
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+#skill .tab button {
+  width:50%;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+#skill .tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  display:flex;border-radius:10px;
+}
+
+/* Style the buttons inside the tab */
+#skill .tab button {
+  width:50%;
+    border-radius:10px;background:none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+#skill .tab button:hover {
+  background-color:deeppink;color:white;
+}
+
+/* Create an active/current tablink class */
+#skill .tab button.active {
+  background-color:deeppink;color:white;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
+.fade-in {
+	-webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2023-8-17 14:0:7
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation fade-in
+ * ----------------------------------------
+ */
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.slide-fwd-center {
+	-webkit-animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+	        animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2023-8-21 23:35:5
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation slide-fwd-center
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-fwd-center {
+  0% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+  }
+  100% {
+    -webkit-transform: translateZ(160px);
+            transform: translateZ(160px);
+  }
+}
+@keyframes slide-fwd-center {
+  0% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+  }
+  100% {
+    -webkit-transform: translateZ(160px);
+            transform: translateZ(160px);
+  }
+}
